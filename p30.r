@@ -1,0 +1,5 @@
+data <- read.csv(file="C:/Users/student/Documents/15CP049/p29.csv")  
+retval <- subset(data, as.Date(start_date) > as.Date("2014-01-01")) 
+write.csv(retval,"C:/Users/student/Documents/15CP049/output.csv") 
+newdata <- read.csv("C:/Users/student/Documents/15CP049/output.csv") 
+print(newdata)
